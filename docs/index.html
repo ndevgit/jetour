@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/icons/favicon.svg"
+      type="image/x-icon"
+    />
+    <!-- Libs Styles -->
+    <link rel="stylesheet" href="./js/libs/swiper/swiper-bundle.min.css" />
+    <!-- End Libs Styles -->
+
+    <link rel="stylesheet" href="./styles/css/style.min.css" />
+    <title>Jetour</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="overlay">
+        <div class="modal">
+          <div class="modal__top">
+            <div class="modal__top-content">
+              <button class="modal__button-close">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1L11 11"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M11 1L0.999999 11"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="modal__background"></div>
+          <div class="modal__middle">
+            <div class="container">
+              <div class="modal__middle-content"></div>
+            </div>
+          </div>
+          <div class="modal__bottom">
+            <div class="container">
+              <div class="modal__bottom-content">
+                <div class="modal__form">
+                  <form class="form" id="form-modal">
+                    <div class="form__input-wrapper">
+                      <label class="form__input-label">
+                        <input
+                          type="text"
+                          class="form__input"
+                          placeholder="Имя"
+                        />
+                      </label>
+                      <label class="form__input-label">
+                        <input
+                          type="tel"
+                          class="form__input"
+                          placeholder="+7 (___) ___-__-__"
+                        />
+                      </label>
+                    </div>
+                    <button
+                      class="button form__button form__button-modal"
+                      type="submit"
+                      form="form-modal"
+                    >
+                      Отправить заявку
+                    </button>
+
+                    <div class="form__checkbox-wrapper">
+                      <label>
+                        <input type="checkbox" class="form__checkbox-real" />
+                        <span
+                          class="form__checkbox-custom form__input-checkbox"
+                        ></span>
+                      </label>
+
+                      <div class="form__checkbox-descr">
+                        <b>Отправляя форму я даю согласие на</b>
+                        <a href="#!"> обработку персональных данных</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header fix-jump">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-content">
+              <div class="header-contacts">
+                <a href="#!" class="header-contacts__link">
+                  27 км МКАД 6 стр 6</a
+                >
+
+                <a class="header-contacts__link" href="tel:+74951111111">
+                  +7 (495) 111 11-11</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-content">
+              <a href="#!" class="header__logo">
+                <img src="./images/logo/logo-white.svg" alt="logo" />
+              </a>
+              <nav class="header__nav">
+                <ul class="header__list">
+                  <li class="header__item">
+                    <a href="#!" class="header__link">Модельный ряд</a>
+                  </li>
+
+                  <li class="header__item">
+                    <a href="#!" class="header__link">Комплектации</a>
+                  </li>
+
+                  <li class="header__item">
+                    <a href="#!" class="header__link">Автокредит</a>
+                  </li>
+
+                  <li class="header__item">
+                    <a href="#!" class="header__link">Trade-In</a>
+                  </li>
+
+                  <li class="header__item">
+                    <a href="#!" class="header__link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="button header__button callback">
+                Обратный звонок
+              </button>
+
+              <button class="burger">
+                <div class="rounds">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="sticks">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__mobile">
+          <div class="header__mobile-top">
+            <div class="container">
+              <div class="mobile-top__content"></div>
+            </div>
+          </div>
+          <div class="header__mobile-bottom">
+            <div class="container">
+              <div class="mobile-bottom__content"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="banner">
+          <div class="banner__content">
+            <div class="banner__main">
+              <div class="container">
+                <div class="banner__main-content">
+                  <div class="banner__title-wrapper">
+                    <h1 class="banner__title">
+                      Автомобили Jetour
+                      <span class="banner__title-nextline"
+                        >с максимальной выгодой</span
+                      >
+                      <span class="banner__title-lowercase">до 400 000 ₽</span>
+                    </h1>
+                    <div class="banner__subtitle-wrapper">
+                      <img
+                        class="banner__subtitle-img"
+                        src="./images/icons/checkbox-icon.svg"
+                        alt="checkbox-icon"
+                      />
+
+                      <p class="banner__subtitle">
+                        Доп. оборудование или <span>КАСКО</span> в подарок
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="banner__timer-wrapper">
+                    <p class="banner__timer-description">
+                      Срок действия акции до <span>31.07. 2023</span>
+                    </p>
+                    <div class="banner__timer-timer">
+                      <script src="//megatimer.ru/get/fe348510359dd7d7cb521303d049f8f8.js"></script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="banner__footer">
+              <div class="terms">
+                <div class="container">
+                  <!-- Form -->
+                  <div class="form-wrapper form-wrapper__before">
+                    <div class="form-wrapper__content">
+                      <div class="form-wrapper__left">
+                        <div class="form__title-wrapper">
+                          <h2 class="form__title">
+                            Оставьте заявку
+                            <span class="form__title-nextline"
+                              >и зафиксируйте условия</span
+                            >
+                          </h2>
+                        </div>
+
+                        <form class="form" id="form1">
+                          <div class="form__input-wrapper">
+                            <label class="form__input-label">
+                              <input
+                                type="text"
+                                class="form__input"
+                                placeholder="Имя"
+                              />
+                            </label>
+
+                            <label class="form__input-label">
+                              <input
+                                type="tel"
+                                class="form__input"
+                                placeholder="+7 (___) ___-__-__"
+                              />
+                            </label>
+                          </div>
+
+                          <div class="form__checkbox-wrapper">
+                            <label>
+                              <input
+                                type="checkbox"
+                                class="form__checkbox-real"
+                              />
+                              <span
+                                class="form__checkbox-custom form__input-checkbox"
+                              ></span>
+                            </label>
+
+                            <div class="form__checkbox-descr">
+                              <b>Отправляя форму я даю согласие на</b>
+                              <a href="#!"> обработку персональных данных</a>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="form-wrapper__right">
+                        <button
+                          class="button form__button"
+                          type="submit"
+                          form="form1"
+                        >
+                          Зафиксировать предложение
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Form -->
+                </div>
+
+                <div class="terms__main">
+                  <div class="container">
+                    <div class="terms__items">
+                      <div class="terms__item">
+                        <p class="terms__item-descr">
+                          Бонус за TRADE-IN <b>до 300 000₽</b>
+                        </p>
+                      </div>
+
+                      <div class="terms__item">
+                        <p class="terms__item-descr">
+                          Доп. скидка за кредит <b>до 70 000₽</b>
+                        </p>
+                      </div>
+
+                      <div class="terms__item">
+                        <p class="terms__item-descr">
+                          Льготная ставка <b>от 4.9%</b>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cars">
+          <div class="cars__content">
+            <div class="cars__models">
+              <div class="container">
+                <div class="models__title-wrapper">
+                  <h2 class="models__title">Модельный ряд</h2>
+                </div>
+                <div class="models__items">
+                  <!-- Models-item -->
+                  <div class="models__item">
+                    <div class="models__item-content">
+                      <div class="models__item-body">
+                        <div class="models__item-left">
+                          <div class="models__item-title">Dashing</div>
+
+                          <div class="item-left__content">
+                            <div class="models__item-colors">
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--green"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--black"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--gray"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--navy"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--white"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--orange"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--darkgreen"
+                                ></span>
+                              </label>
+                            </div>
+                            <div class="models__item-image">
+                              <img
+                                src="./images/car-overview.png"
+                                alt="car-overview"
+                              />
+                            </div>
+
+                            <div class="models__item-colorname">
+                              Цвет: <span>Серебристо-бело-молочный</span>
+                            </div>
+
+                            <div class="models__item-preview">
+                              <div class="swiper">
+                                <div class="swiper-wrapper">
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview1.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview2.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview3.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview3.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="models__item-right">
+                          <div class="models__item-terms">
+                            <p class="models__item-term">Кредит от 4,9%</p>
+                            <p class="models__item-term">Рассрочка 0%</p>
+                            <p class="models__item-term">
+                              Trade-In в вашу пользу
+                            </p>
+                            <p class="models__item-term">КАСКО в подарок</p>
+                          </div>
+                          <div class="models__item-price">
+                            <span class="price price--old">2 865 900 ₽</span>
+                            <span class="price">от 1 550 000 ₽</span>
+                          </div>
+                          <div class="models__item-buttons">
+                            <div class="button-credit__wrapper">
+                              <span>от 20 000 ₽/мес</span>
+                              <button
+                                class="models__item-button models__item-button--credit credit-btn"
+                              >
+                                Купить в кредит
+                              </button>
+                            </div>
+
+                            <button
+                              class="models__item-button models__item-button--fix callback"
+                            >
+                              Зафиксировать цену
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Models-item -->
+
+                  <!-- Models-item -->
+                  <div class="models__item">
+                    <div class="models__item-content">
+                      <div class="models__item-body">
+                        <div class="models__item-left">
+                          <div class="models__item-title">Dashing</div>
+
+                          <div class="item-left__content">
+                            <div class="models__item-colors">
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--green"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--black"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--gray"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--navy"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--white"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--orange"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--darkgreen"
+                                ></span>
+                              </label>
+                            </div>
+                            <div class="models__item-image">
+                              <img
+                                src="./images/car-overview.png"
+                                alt="car-overview"
+                              />
+                            </div>
+
+                            <div class="models__item-colorname">
+                              Цвет: <span>Серебристо-бело-молочный</span>
+                            </div>
+
+                            <div class="models__item-preview">
+                              <div class="swiper">
+                                <div class="swiper-wrapper">
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview1.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview2.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview3.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview3.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="models__item-right">
+                          <div class="models__item-terms">
+                            <p class="models__item-term">Кредит от 4,9%</p>
+                            <p class="models__item-term">Рассрочка 0%</p>
+                            <p class="models__item-term">
+                              Trade-In в вашу пользу
+                            </p>
+                            <p class="models__item-term">КАСКО в подарок</p>
+                          </div>
+                          <div class="models__item-price">
+                            <span class="price price--old">2 865 900 ₽</span>
+                            <span class="price">от 1 550 000 ₽</span>
+                          </div>
+                          <div class="models__item-buttons">
+                            <div class="button-credit__wrapper">
+                              <span>от 20 000 ₽/мес</span>
+                              <button
+                                class="models__item-button models__item-button--credit credit-btn"
+                              >
+                                Купить в кредит
+                              </button>
+                            </div>
+
+                            <button
+                              class="models__item-button models__item-button--fix callback"
+                            >
+                              Зафиксировать цену
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Models-item -->
+
+                  <!-- Models-item -->
+                  <div class="models__item">
+                    <div class="models__item-content">
+                      <div class="models__item-body">
+                        <div class="models__item-left">
+                          <div class="models__item-title">Dashing</div>
+
+                          <div class="item-left__content">
+                            <div class="models__item-colors">
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--green"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--black"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--gray"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--navy"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--white"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--orange"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--darkgreen"
+                                ></span>
+                              </label>
+                            </div>
+                            <div class="models__item-image">
+                              <img
+                                src="./images/car-overview.png"
+                                alt="car-overview"
+                              />
+                            </div>
+
+                            <div class="models__item-colorname">
+                              Цвет: <span>Серебристо-бело-молочный</span>
+                            </div>
+
+                            <div class="models__item-preview">
+                              <div class="swiper">
+                                <div class="swiper-wrapper">
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview1.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview2.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview3.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview3.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="models__item-right">
+                          <div class="models__item-terms">
+                            <p class="models__item-term">Кредит от 4,9%</p>
+                            <p class="models__item-term">Рассрочка 0%</p>
+                            <p class="models__item-term">
+                              Trade-In в вашу пользу
+                            </p>
+                            <p class="models__item-term">КАСКО в подарок</p>
+                          </div>
+                          <div class="models__item-price">
+                            <span class="price price--old">2 865 900 ₽</span>
+                            <span class="price">от 1 550 000 ₽</span>
+                          </div>
+                          <div class="models__item-buttons">
+                            <div class="button-credit__wrapper">
+                              <span>от 20 000 ₽/мес</span>
+                              <button
+                                class="models__item-button models__item-button--credit credit-btn"
+                              >
+                                Купить в кредит
+                              </button>
+                            </div>
+
+                            <button
+                              class="models__item-button models__item-button--fix callback"
+                            >
+                              Зафиксировать цену
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Models-item -->
+
+                  <!-- Models-item -->
+                  <div class="models__item">
+                    <div class="models__item-content">
+                      <div class="models__item-body">
+                        <div class="models__item-left">
+                          <div class="models__item-title">Dashing</div>
+
+                          <div class="item-left__content">
+                            <div class="models__item-colors">
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--green"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--black"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--gray"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--navy"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--white"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--orange"
+                                ></span>
+                              </label>
+
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="color__checkbox-real"
+                                />
+                                <span
+                                  class="color__checkbox-custom color__checkbox-custom--darkgreen"
+                                ></span>
+                              </label>
+                            </div>
+                            <div class="models__item-image">
+                              <img
+                                src="./images/car-overview.png"
+                                alt="car-overview"
+                              />
+                            </div>
+
+                            <div class="models__item-colorname">
+                              Цвет: <span>Серебристо-бело-молочный</span>
+                            </div>
+
+                            <div class="models__item-preview">
+                              <div class="swiper">
+                                <div class="swiper-wrapper">
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview1.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview2.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview3.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+
+                                  <!-- Swiper-slide -->
+                                  <div class="item-preview__image swiper-slide">
+                                    <img
+                                      src="./images/car-preview3.png"
+                                      alt="car-preview"
+                                    />
+                                  </div>
+                                  <!-- End Swiper-slide -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="models__item-right">
+                          <div class="models__item-terms">
+                            <p class="models__item-term">Кредит от 4,9%</p>
+                            <p class="models__item-term">Рассрочка 0%</p>
+                            <p class="models__item-term">
+                              Trade-In в вашу пользу
+                            </p>
+                            <p class="models__item-term">КАСКО в подарок</p>
+                          </div>
+                          <div class="models__item-price">
+                            <span class="price price--old">2 865 900 ₽</span>
+                            <span class="price">от 1 550 000 ₽</span>
+                          </div>
+                          <div class="models__item-buttons">
+                            <div class="button-credit__wrapper">
+                              <span>от 20 000 ₽/мес</span>
+                              <button
+                                class="models__item-button models__item-button--credit credit-btn"
+                              >
+                                Купить в кредит
+                              </button>
+                            </div>
+
+                            <button
+                              class="models__item-button models__item-button--fix callback"
+                            >
+                              Зафиксировать цену
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Models-item -->
+                </div>
+              </div>
+            </div>
+
+            <div class="cars__specs">
+              <div class="container">
+                <div class="cars__specs-content">
+                  <div class="specs__title-wrapper">
+                    <h2 class="specs__title">Комплектации</h2>
+                  </div>
+
+                  <div class="specs__select-wrapper">
+                    <select class="specs__select">
+                      <option value="Модель">Модель</option>
+                    </select>
+
+                    <select class="specs__select">
+                      <option value="Комплектация">Комплектация</option>
+                    </select>
+                  </div>
+
+                  <div class="specs__items">
+                    <div class="specs__item">
+                      <div class="specs__item-content">
+                        <div class="specs__item-type">COMFORT 1.6</div>
+                        <div class="specs__item-body">
+                          <div class="specs__item-column">
+                            <div class="models__item-overview">
+                              <div class="models__item-image specs__item-image">
+                                <img
+                                  src="./images/car-overview.png"
+                                  alt="car-overview"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="specs__item-column">
+                            <div class="models__item-title specs__item-title">
+                              Dashing
+                            </div>
+                            <div class="specs__item-specs">
+                              <p>190 л.с.</p>
+                              <p>АКПП 6</p>
+                              <p>1.6 л</p>
+                              <p>Полный (4WD)</p>
+                            </div>
+                          </div>
+
+                          <div class="specs__item-column">
+                            <div class="specs__item-price">
+                              <div class="item-credit__wrapper">
+                                <span class="credit">от 20 000 ₽/мес</span>
+                              </div>
+
+                              <div class="item-price__wrapper">
+                                <span class="price price--old"
+                                  >2 865 900 ₽</span
+                                >
+                                <span class="price">от 1 550 000 ₽</span>
+                              </div>
+                            </div>
+
+                            <div class="specs__item-buttons">
+                              <button
+                                class="models__item-button models__item-button--credit specs__item-button--credit credit-btn"
+                              >
+                                Купить в кредит
+                              </button>
+
+                              <button
+                                class="models__item-button models__item-button--fix callback"
+                              >
+                                Зафиксировать цену
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="specs__item">
+                      <div class="specs__item-content">
+                        <div class="specs__item-type">COMFORT 1.6</div>
+                        <div class="specs__item-body">
+                          <div class="specs__item-column">
+                            <div class="models__item-overview">
+                              <div class="models__item-image specs__item-image">
+                                <img
+                                  src="./images/car-overview.png"
+                                  alt="car-overview"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="specs__item-column">
+                            <div class="models__item-title specs__item-title">
+                              Dashing
+                            </div>
+                            <div class="specs__item-specs">
+                              <p>190 л.с.</p>
+                              <p>АКПП 6</p>
+                              <p>1.6 л</p>
+                              <p>Полный (4WD)</p>
+                            </div>
+                          </div>
+
+                          <div class="specs__item-column">
+                            <div class="specs__item-price">
+                              <div class="item-credit__wrapper">
+                                <span class="credit">от 20 000 ₽/мес</span>
+                              </div>
+
+                              <div class="item-price__wrapper">
+                                <span class="price price--old"
+                                  >2 865 900 ₽</span
+                                >
+                                <span class="price">от 1 550 000 ₽</span>
+                              </div>
+                            </div>
+
+                            <div class="specs__item-buttons">
+                              <button
+                                class="models__item-button models__item-button--credit specs__item-button--credit credit-btn"
+                              >
+                                Купить в кредит
+                              </button>
+
+                              <button
+                                class="models__item-button models__item-button--fix callback"
+                              >
+                                Зафиксировать цену
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="specs__item">
+                      <div class="specs__item-content">
+                        <div class="specs__item-type">COMFORT 1.6</div>
+                        <div class="specs__item-body">
+                          <div class="specs__item-column">
+                            <div class="models__item-overview">
+                              <div class="models__item-image specs__item-image">
+                                <img
+                                  src="./images/car-overview.png"
+                                  alt="car-overview"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="specs__item-column">
+                            <div class="models__item-title specs__item-title">
+                              Dashing
+                            </div>
+                            <div class="specs__item-specs">
+                              <p>190 л.с.</p>
+                              <p>АКПП 6</p>
+                              <p>1.6 л</p>
+                              <p>Полный (4WD)</p>
+                            </div>
+                          </div>
+
+                          <div class="specs__item-column">
+                            <div class="specs__item-price">
+                              <div class="item-credit__wrapper">
+                                <span class="credit">от 20 000 ₽/мес</span>
+                              </div>
+
+                              <div class="item-price__wrapper">
+                                <span class="price price--old"
+                                  >2 865 900 ₽</span
+                                >
+                                <span class="price">от 1 550 000 ₽</span>
+                              </div>
+                            </div>
+
+                            <div class="specs__item-buttons">
+                              <button
+                                class="models__item-button models__item-button--credit specs__item-button--credit credit-btn"
+                              >
+                                Купить в кредит
+                              </button>
+
+                              <button
+                                class="models__item-button models__item-button--fix callback"
+                              >
+                                Зафиксировать цену
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="change">
+          <div class="change__header">
+            <div class="change__header-content">
+              <div class="credit-promo">
+                <div class="container">
+                  <div class="credit-promo__content">
+                    <div class="credit-promo__title-wrapper">
+                      <h2 class="credit-promo__title">
+                        КРЕДИТ НА JETOUR без первоначального взноса
+                      </h2>
+                    </div>
+
+                    <div class="credit-promo__terms-wrapper">
+                      <div class="credit-promo__terms">
+                        <p class="credit-promo__term">
+                          Льготная ставка от 4,9%
+                        </p>
+                        <p class="credit-promo__term">
+                          Дополнительная скидка до 70 000 ₽
+                        </p>
+                        <p class="credit-promo__term">
+                          Досрочное погашение без штрафов
+                        </p>
+                        <p class="credit-promo__term">
+                          3 месяца кредитный каникул
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Form -->
+                    <div
+                      class="form-wrapper form-wrapper__before form-wrapper--vertical"
+                    >
+                      <div class="form-wrapper__content">
+                        <div
+                          class="form-wrapper__left form-wrapper__left-promo"
+                        >
+                          <form class="form" id="form2">
+                            <div
+                              class="form__input-wrapper form__input-wrapper--vertical"
+                            >
+                              <label class="form__input-label">
+                                <input
+                                  type="text"
+                                  class="form__input"
+                                  placeholder="Имя"
+                                />
+                              </label>
+                              <label class="form__input-label">
+                                <input
+                                  type="tel"
+                                  class="form__input"
+                                  placeholder="+7 (___) ___-__-__"
+                                />
+                              </label>
+                            </div>
+
+                            <div class="form__checkbox-wrapper">
+                              <label>
+                                <input
+                                  type="checkbox"
+                                  class="form__checkbox-real"
+                                />
+                                <span
+                                  class="form__checkbox-custom form__input-checkbox"
+                                ></span>
+                              </label>
+
+                              <div class="form__checkbox-descr">
+                                <b>Отправляя форму я даю согласие на</b>
+                                <a href="#!"> обработку персональных данных</a>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="form-wrapper__right">
+                          <button
+                            class="button form__button"
+                            type="submit"
+                            form="form2"
+                          >
+                            Отправить заявку
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Form -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="change__car">
+            <div class="container">
+              <div class="change__car-content">
+                <div class="image__wrapper">
+                  <picture>
+                    <source
+                      media="(max-width: 360px)"
+                      srcset="./images/change-bg-mobile.png"
+                    />
+                    <source
+                      media="(min-width: 993px)"
+                      srcset="./images/change-bg.png"
+                    />
+                    <img
+                      class="change__car-img"
+                      src="./images/change-bg.png"
+                      alt="Image"
+                    />
+                  </picture>
+                </div>
+
+                <div class="change__title-wrapper">
+                  <h2 class="change__title">
+                    обменяйте ваш старый авто на новый Jetour
+                  </h2>
+
+                  <p class="change__subtitle">с выгодой до 300 000₽</p>
+                </div>
+
+                <!-- Form -->
+                <div class="form-wrapper form-wrapper--change">
+                  <div
+                    class="form-wrapper__content form-wrapper__content--vertical"
+                  >
+                    <div
+                      class="form-wrapper__left form-wrapper__left--vertical"
+                    >
+                      <div
+                        class="form__title-wrapper form__title-wrapper--vertical"
+                      >
+                        <p class="form__title form__title--vertical">
+                          Бесплатно оценим авто
+                        </p>
+                      </div>
+
+                      <form class="form" id="form3">
+                        <div class="form__select-wrapper">
+                          <select class="form__select">
+                            <option value="Марка">Марка</option>
+                          </select>
+
+                          <select class="form__select">
+                            <option value="Модель">Модель</option>
+                          </select>
+
+                          <select class="form__select">
+                            <option value="Год">Год</option>
+                          </select>
+                        </div>
+
+                        <div
+                          class="form__input-wrapper form__input-wrapper--vertical"
+                        >
+                          <label class="form__input-label">
+                            <input
+                              type="text"
+                              class="form__input"
+                              placeholder="Имя"
+                            />
+                          </label>
+
+                          <label class="form__input-label">
+                            <input
+                              type="tel"
+                              class="form__input"
+                              placeholder="+7 (___) ___-__-__"
+                            />
+                          </label>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="form-wrapper__right">
+                      <button
+                        class="button form__button form__button--vertical"
+                        type="submit"
+                        form="form3"
+                      >
+                        Отправить заявку
+                      </button>
+
+                      <div class="form__checkbox-wrapper">
+                        <label>
+                          <input type="checkbox" class="form__checkbox-real" />
+                          <span class="form__checkbox-custom"></span>
+                        </label>
+
+                        <div class="form__checkbox-descr">
+                          <b>Отправляя форму я даю согласие на</b>
+                          <a href="#!"> обработку персональных данных</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Form -->
+              </div>
+            </div>
+          </div>
+
+          <div class="change__contacts">
+            <div class="change__contacts-map">
+              <div class="yamap" style="position: relative; overflow: hidden">
+                <a
+                  href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                  style="
+                    color: #eee;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 0px;
+                  "
+                  >Москва</a
+                ><a
+                  href="https://yandex.ru/maps/213/moscow/house/mkad_27_y_kilometr_vl9/Z04YcQdjTEQDQFtvfXl5cX9lZA==/?ll=37.707766%2C55.574454&utm_medium=mapframe&utm_source=maps&z=14.72"
+                  style="
+                    color: #eee;
+                    font-size: 12px;
+                    position: absolute;
+                    top: 14px;
+                  "
+                  >МКАД, 27-й километр, вл9 — Яндекс Карты</a
+                ><iframe
+                  src="https://yandex.ru/map-widget/v1/?ll=37.707766%2C55.574454&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzM2MDc5MTUSQ9Cg0L7RgdGB0LjRjywg0JzQvtGB0LrQstCwLCDQnNCa0JDQlCwgMjct0Lkg0LrQuNC70L7QvNC10YLRgCwg0LLQuzkiCg1m0BZCFUlSXkI%2C&z=14.72"
+                  width="100%"
+                  height="690"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  style="position: relative"
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="change__contacts-content">
+                <h2 class="change__contacts-title">Контакты</h2>
+
+                <div class="change__contacts-wrapper">
+                  <p class="change__contacts-contact">
+                    Ежедневно <span>с 8:00 до 21:00</span>
+                  </p>
+
+                  <a class="change__contacts-contact" href="tel:+74951111111"
+                    >Телефон: +7 (495) 111 11-11</a
+                  >
+
+                  <a href="#!" class="change__contacts-contact"
+                    >Адрес: 27 км МКАД 6 стр 6</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__top">
+            <div class="container">
+              <div class="footer__top-content">
+                <div class="footer__policy">
+                  <a class="footer__policy-link" href="#!"
+                    >Политика конфиденциальности</a
+                  >
+                  <a class="footer__policy-link" href="#!"
+                    >Условия кредитования</a
+                  >
+                  <a class="footer__policy-link" href="#!"
+                    >Пользовательское соглашение</a
+                  >
+                </div>
+
+                <div class="footer__address">
+                  <p class="footer__address-name">
+                    ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «МК СМАРТИНВЕСТ»
+                  </p>
+
+                  <p>
+                    ИНН 9725002820, ОГРН 1197746118206 от 18 февраля 2019 г.,
+                    Юр. Адрес: 115114, город Москва, Дербеневская наб, д. 7 стр.
+                    2, этаж 3 офис 52
+                  </p>
+                </div>
+
+                <div class="footer__info">
+                  <p>
+                    Обращаем Ваше внимание на то, что данный интернет-сайт носит
+                    исключительно информационный характер и ни при каких
+                    условиях не является публичной офертой, определяемой
+                    положениями Статьи 437 Гражданского кодекса Российской
+                    Федерации.
+                  </p>
+
+                  <a class="footer__info-link" href="#!">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer__bottom-content">
+              <div class="container">
+                <p class="footer__text">
+                  Обращаем ваше внимание на то, что данный Интернет-сайт носит
+                  исключительно информационный характер и ни при каких условиях
+                  не является публичной офертой, определяемой положениями Статьи
+                  437 Гражданского кодекса Российской Федерации. Для получения
+                  подробной информации о стоимости автомобилей обращайтесь к
+                  менеджерам по продажам. Любая информация, содержащаяся на
+                  настоящем сайте, носит исключительно справочный характер и ни
+                  при каких обстоятельствах не может быть расценена как
+                  предложение заключить договор (публичная оферта). Дилер не
+                  дает гарантий по поводу своевременности, точности и полноты
+                  информации на веб-сайте, а также по поводу беспрепятственного
+                  доступа к нему в любое время. Технические характеристики и
+                  оборудование автомобилей, условия приобретения автомобилей,
+                  цены, спецпредложения и комплектации автомобилей, указанные на
+                  сайте, приведены для примера и могут быть изменены в любое
+                  время без предварительного уведомления. Для получения
+                  подробной информации об актуальных ценах на продукцию и
+                  наличии автомобилей обращайтесь в дилерский центр.
+                  Приобретение любой продукции бренда осуществляется в
+                  соответствии с условиями индивидуального договора
+                  купли-продажи. Представленное изображение автомобиля может
+                  отличаться от реализуемого. Не является публичной офертой. ПТС
+                  - Паспорт транспортного средства. На данном сайте используются
+                  зарегистрированные товарные знаки, перечисленные в разделе
+                  Правовая информация. Указана цена на автомобиль в начальной
+                  комплектации на автомобили 2022 модельного года. Для заказов с
+                  подтвержденной производственной к.н. 50/2021. Количество
+                  автомобилей ограничено. Размер платежа в день означает
+                  величину затрат заемщика, эквивалентную ежемесячному платежу
+                  при условии 30 (тридцати) календарных дней в месяце, взявшего
+                  кредит по программе кредитования ВТБ, Сетелем, Русфинанс Банк,
+                  Банк Союз, Экспобанк, Совкомбанк, Альфа Банк, Тинькофф,
+                  Плюсбанк, Банк Оранжевый, Росбанк, Ситибанк, (далее – «Банк»)
+                  на покупку нового автомобиля с расчетной розничной ценой в
+                  начально комплектации, на срок 60 мес., с первоначальным
+                  взносом 57,92% от стоимости автомобиля, остаточным платежом
+                  (далее ОП) 20% от стоимости автомобиля и процентной ставкой
+                  14,5%. Данная информация не является офертой Банка, расчет
+                  является приблизительным. Полная стоимость кредита и
+                  конкретные параметры кредита будут рассчитаны на основании
+                  Анкеты клиента, направляемой в Банк для одобрения кредитной
+                  заявки. Основные условия кредитования ВТБ, Сетелем, Русфинанс
+                  Банк, Банк Союз, Экспобанк, Совкомбанк, Альфа Банк, Тинькофф,
+                  Плюсбанк, Банк Оранжевый, Росбанк, Ситибанк, (далее Банк) на
+                  покупку нового автомобиля по продукту «Кредит с остаточным
+                  платежом на приобретение нового автомобиля» валюта кредита –
+                  рубли РФ; сумма кредита от 120 тыс. до 5.8 млн. ₽ Процентная
+                  ставка (в % годовых) при сроке от 12 до 60 мес. – 14,5% при
+                  первоначальном взносе (далее ПВ) от 15% (включительно). При ПВ
+                  менее 20% необходимо предоставление полного пакета документов.
+                  Минимальный размер остаточного платежа (далее ОП) в % от
+                  стоимости автомобиля – 20%; максимальный размер ОП при сроке
+                  при сроке кредита 12 мес. – 60%, при сроках от 13 до 24 мес. –
+                  50%, при сроках от 25 до 36 мес. – 45%, при сроках от 37 до 48
+                  мес. – 30%, при сроках от 49 до 60 мес. – 20%. Обеспечение по
+                  кредиту – залог приобретаемого автомобиля. Условия кредита
+                  действительны до 01.06.2022 и могут быть изменены Банком.
+                  Лицензия ЦБ РФ № 3500, г. Москва.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS libs -->
+    <script src="./js/libs/swiper/swiper-bundle.min.js"></script>
+    <!-- End JS libs -->
+
+    <!-- JS main -->
+    <script src="./js/index.js" type="module"></script>
+    <!-- End JS main -->
+  </body>
+</html>
