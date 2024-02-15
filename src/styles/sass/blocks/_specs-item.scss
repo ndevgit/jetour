@@ -1,0 +1,88 @@
+// .specs__item {
+//   background-color: gray;
+// }
+
+.specs__item-type {
+  color: $text-seawave;
+  font-weight: 500;
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 31px;
+    display: block;
+    background-color: $ui-orange;
+    margin-right: 10px;
+  }
+}
+
+.specs__item-body {
+  display: grid;
+  grid-template-columns: 2.3fr 3fr 3fr;
+}
+
+.specs__item-title {
+  margin-bottom: 49px;
+}
+
+.specs__item-specs {
+  display: grid;
+  grid-template-columns: 0.4fr 0.4fr;
+  row-gap: 25px;
+
+  & p {
+    font-size: 20px;
+    color: $text-seawave;
+    font-weight: 500;
+  }
+}
+
+.specs__item-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  grid-template-areas: "credit price";
+}
+
+.item-credit__wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-area: credit;
+}
+
+.credit {
+  color: $text-green;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.item-price__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  grid-area: price;
+}
+
+.specs__item-buttons {
+  display: flex;
+  column-gap: 15px;
+
+  & button {
+    width: 100%;
+  }
+}
+
+.specs__item-button--credit {
+  border: 1px solid $ui-green;
+}
+
+.specs__item-image {
+  margin: 0;
+}

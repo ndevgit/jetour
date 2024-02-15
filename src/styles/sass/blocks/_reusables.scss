@@ -1,0 +1,18 @@
+.button {
+  color: $text-white;
+  font-family: Muller;
+  font-size: 14px;
+
+  border: none;
+  background-color: $ui-green;
+  max-width: 190px;
+  width: 100%;
+  padding: 12px 0;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $ui-green-hover;
+  }
+}

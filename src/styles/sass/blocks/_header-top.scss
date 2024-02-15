@@ -1,0 +1,48 @@
+.header__top {
+  background-color: $header-top-bg;
+
+  padding-top: 5px;
+  padding-bottom: 8px;
+}
+
+.header__top-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.header-contacts__link {
+  font-size: 15px;
+  position: relative;
+  display: block;
+
+  &::before {
+    content: url(../../images/icons/mark.svg);
+    width: 13px;
+    height: 14px;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+}
+
+.header-contacts__link:last-child {
+  &::before {
+    content: url(../../images/icons/tel.svg);
+    width: 14px;
+    height: 12px;
+    margin-right: 8px;
+  }
+}
+
+.tel {
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+
+  margin-right: 10px;
+}

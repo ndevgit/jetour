@@ -1,0 +1,11 @@
+.container {
+  max-width: 1530px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  // background-color: rgba(255, 0, 0, 0.534);
+}
+
+.container-form {
+  padding-right: calc((100% - 1530px) / 2 + 15px);
+}

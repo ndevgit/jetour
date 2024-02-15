@@ -1,0 +1,19 @@
+.header {
+  color: $text-white;
+
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header a {
+  color: $text-white;
+  transition: 0.3s;
+
+  &:hover {
+    color: $text-green;
+  }
+}

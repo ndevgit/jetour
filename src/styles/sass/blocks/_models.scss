@@ -1,0 +1,23 @@
+.cars__models {
+  margin-bottom: 95px;
+}
+
+.models__title-wrapper {
+  margin-bottom: 48px;
+}
+
+.models__title {
+  color: $text-seawave;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.models__items {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  gap: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

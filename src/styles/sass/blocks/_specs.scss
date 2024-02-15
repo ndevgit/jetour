@@ -1,0 +1,44 @@
+.specs__title-wrapper {
+  margin-bottom: 48px;
+}
+
+.specs__title {
+  color: $text-seawave;
+
+  font-size: 32px;
+
+  font-weight: 700;
+}
+
+.specs__select-wrapper {
+  display: flex;
+  column-gap: 20px;
+
+  margin-bottom: 60px;
+}
+
+.specs__select {
+  border: none;
+  max-width: 740px;
+  width: 100%;
+  padding: 20px 22px;
+
+  background-color: rgba(25, 62, 77, 0.1);
+
+  font-family: $font-muller;
+
+  color: $text-seawave;
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $ui-green-hover;
+    color: $text-white;
+  }
+}

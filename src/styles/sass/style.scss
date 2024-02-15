@@ -1,0 +1,62 @@
+@import "./blocks/reset";
+@import "./blocks/variables";
+@import "./blocks/body";
+@import "./blocks/reusables";
+@import "./blocks/overlay";
+@import "./blocks/modal";
+@import "./blocks/container";
+@import "./blocks/header";
+@import "./blocks/header-top";
+@import "./blocks/header-bottom";
+@import "./blocks/header-mobile";
+@import "./blocks/main";
+@import "./blocks/banner";
+@import "./blocks/timer";
+@import "./blocks/form";
+@import "./blocks/form-vertical";
+@import "./blocks/terms";
+@import "./blocks/cars";
+@import "./blocks/models";
+@import "./blocks/models-item";
+@import "./blocks/swiper";
+@import "./blocks/specs";
+@import "./blocks/specs-item";
+@import "./blocks/change";
+@import "./blocks/change-header";
+@import "./blocks/change-car";
+@import "./blocks/change-contacts";
+@import "./blocks/footer";
+@import "./blocks/validation";
+@import "./blocks/media.scss";
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller Regular"), local("Muller Regular"),
+    url("../../fonts/Muller/MullerRegular.woff") format(woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller Medium"), local("Muller Medium"),
+    url("../../fonts/Muller/MullerMedium.woff") format(woff);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller Bold"), local("Muller Bold"),
+    url("../../fonts/Muller/MullerBold.woff") format(woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller ExtraBold"), local("Muller ExtraBold"),
+    url("../../fonts/Muller/MullerExtraBold.woff") format(woff);
+  font-weight: 800;
+  font-style: normal;
+}

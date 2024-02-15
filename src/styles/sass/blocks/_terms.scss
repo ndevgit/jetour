@@ -1,0 +1,43 @@
+.terms__main {
+  background-color: $ui-white;
+  padding-top: 60px;
+}
+
+.terms__items {
+  display: flex;
+  column-gap: 30px;
+
+  justify-content: center;
+}
+
+.terms__item {
+  background-color: $ui-seawave;
+  border-left: 22px solid $ui-green;
+  padding: 70px 30px;
+
+  display: flex;
+  // align-items: center;
+
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 482px;
+  width: 100%;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $ui-seawave-hover;
+  }
+}
+
+.terms__item-descr {
+  color: $text-white;
+
+  font-size: 24px;
+
+  line-height: 126.023%; /* 30.245px */
+
+  max-width: 284px;
+}

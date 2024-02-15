@@ -1,0 +1,146 @@
+.modal {
+  margin-top: -8000px;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+  max-width: 600px;
+  width: 100%;
+  border-radius: 3px;
+  z-index: 1;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s;
+}
+
+.modal--visible {
+  margin-top: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal--callback {
+}
+
+.modal__top-content {
+  padding: 13px 10px;
+}
+
+.modal__button-close {
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: transparent;
+
+  padding: 10px;
+  border-radius: 3px;
+
+  margin-left: auto;
+
+  transition: 0.3s;
+
+  & svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  &:hover {
+    background-color: $ui-green-hover;
+
+    & svg {
+      path {
+        transition: 0.3s;
+        stroke: $ui-white;
+      }
+    }
+  }
+}
+
+.modal__background--visible {
+  height: 56px;
+  background-image: url(../../images/item-bg.svg);
+  background-repeat: no-repeat;
+
+  background-position: center;
+  background-size: contain;
+}
+
+.modal__middle-content {
+  padding: 0 15px;
+}
+
+.modal__bottom {
+  background-image: url(../../images/modal-bg.svg);
+  background-repeat: no-repeat;
+  // background-position: right;
+  // background-size: 517px 712px;
+
+  background-position: right -300px;
+  background-size: 383px 712px;
+}
+
+.modal__bottom-content {
+  padding: 55px 15px 30px 15px;
+}
+
+.modal__form {
+  display: none;
+}
+
+.modal__form--visible {
+  display: block;
+}
+
+.modal__title-wrapper--callback {
+  margin-top: 30px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.modal__title-wrapper--credit {
+  width: 332px;
+  margin-bottom: 20px;
+}
+
+.modal__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: $text-seawave;
+}
+
+.modal__subtitle {
+  font-size: 16px;
+  color: $text-seawave;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.modal__terms {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+
+  // margin-bottom: 28px;
+}
+
+.modal__term {
+  color: $text-seawave;
+  font-weight: 500;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    background-color: #38ab96;
+    width: 4px;
+    height: 19px;
+    display: block;
+    margin-right: 9px;
+  }
+}

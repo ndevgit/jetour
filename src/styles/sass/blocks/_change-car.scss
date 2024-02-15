@@ -1,0 +1,48 @@
+.change__car {
+  margin-bottom: 100px;
+}
+
+.change__car-content {
+  display: grid;
+  grid-template-columns: 5fr 3.1fr;
+  grid-template-areas:
+    "image title"
+    "image form";
+  column-gap: 20px;
+}
+
+.change__title-wrapper {
+  max-width: 534px;
+  grid-area: title;
+}
+
+.change__title {
+  color: $text-darkgreen;
+
+  font-size: 32px;
+
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
+}
+
+.change__subtitle {
+  color: $text-darkgreen;
+
+  font-size: 20px;
+
+  text-transform: uppercase;
+}
+
+.image__wrapper {
+  position: relative;
+}
+
+.change__car-img {
+  position: absolute;
+  right: 0;
+}
+
+.form-wrapper--change {
+  grid-area: form;
+}
