@@ -10,6 +10,19 @@ const headerBottom = document.querySelector(".header__bottom");
 const headerBottomContent = document.querySelector(".header__bottom-content");
 const burger = document.querySelector(".burger");
 
+const bannerTopContent = document.querySelector(".banner__top-content");
+const bannerBottomContent = document.querySelector(".banner__bottom-content");
+const formWrappers = document.querySelectorAll(".form-wrapper");
+const formWrapperFirst = formWrappers[0];
+const formWrapperSecond = formWrappers[1];
+
+const creditPromoTopContent = document.querySelector(
+  ".credit-promo__top-content"
+);
+const creditPromoBottomContent = document.querySelector(
+  ".credit-promo__bottom-content"
+);
+
 //Флаг для проверки скролла
 let scrollDisabled = false;
 
@@ -39,6 +52,10 @@ function moveElements() {
     mobileTopContent.append(headerNav);
     mobileBottomContent.append(headerButton);
 
+    bannerBottomContent.append(formWrapperFirst);
+
+    creditPromoBottomContent.append(formWrapperSecond);
+
     //Флаги для проверки запуска функций
     moveElementsStarted = true;
     restoreElementsStarted = false;
@@ -50,6 +67,10 @@ function restoreElements() {
   if (!restoreElementsStarted && window.innerWidth > 992) {
     headerBottomContent.append(headerNav);
     headerBottomContent.append(headerButton);
+
+    bannerTopContent.append(formWrapperFirst);
+
+    creditPromoTopContent.append(formWrapperSecond);
 
     //Флаги для проверки запуска функций
     restoreElementsStarted = true;

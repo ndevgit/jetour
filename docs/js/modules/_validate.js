@@ -17,7 +17,7 @@ function formValidate() {
   forms.forEach((formsElement) => {
     formsElement.addEventListener("submit", function (event) {
       event.preventDefault();
-      console.log(formsElement);
+      // console.log(formsElement);
 
       function createModal() {
         modal.classList.add("modal--visible");
@@ -27,6 +27,8 @@ function formValidate() {
         createSubtitle("Наш менеджер свяжется с вами в течение 5 минут");
         modalForm.classList.remove("modal__form--visible");
         modalBackground.classList.remove("modal__background--visible");
+        removeTerms();
+        disableScroll();
       }
 
       if (validation(this) == true) {
@@ -41,7 +43,7 @@ function formValidate() {
     const inputs = form.querySelectorAll("input");
 
     inputs.forEach((inputsElement) => {
-      console.log(inputsElement);
+      // console.log(inputsElement);
 
       removeError(inputsElement);
       if (inputsElement.value == "") {
